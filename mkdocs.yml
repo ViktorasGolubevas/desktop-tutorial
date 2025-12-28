@@ -7,4 +7,4 @@ theme:
 markdown_extensions:
   - admonition  # Leidžia kurti spalvotus blokus
   - pymdownx.highlight
-  - pymdownx.superfences
+#  - pymdownx.superfences
