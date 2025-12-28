@@ -1,15 +1,64 @@
 site_name: Programavimas C++ (1 kursas)
+site_url: https://viktorasgolubevas.github.io/desktop-tutorial/
+repo_url: https://github.com/ViktorasGolubevas/desktop-tutorial
+repo_name: GitHub Repo
+
+# Temos nustatymai
 theme:
   name: material
-  language: lt
-  features:
-    - content.code.copy
-    - navigation.expand
-markdown_extensions:
-  - admonition  # Leidžia kurti spalvotus blokus
-  - pymdownx.highlight
-  - pymdownx.superfences
+  language: lt           # Lietuvių kalba (paieškai ir mygtukams)
+  
+  # Spalvų paletė (Dark/Light mode mygtukas viršuje)
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Perjungti į tamsų režimą
+    - scheme: slate      # Tamsi tema
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Perjungti į šviesų režimą
 
+  features:
+    - navigation.expand       # Išskleidžia meniu
+    - navigation.top          # "Back to top" mygtukas
+    - navigation.tabs         # Meniu perkelia į viršų (kaip naršyklės tab'ai) - gražiau
+    - content.code.copy       # "Copy" mygtukas prie kodo
+
+# Markdown plėtiniai (Čia prasideda magija)
+markdown_extensions:
+  # Leidžia naudoti !!! note "Pastaba" blokus
+  - admonition
+  
+  # Leidžia sutraukti blokus (pvz. ilgiems sprendimams)
+  - pymdownx.details
+  
+  # Kodo spalvinimas
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  
+  # Reikalinga, kad veiktų Mermaid diagramos ir kodų blokai
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  # SKIRTUKAI (Tabs) - jūsų C vs C++ palyginimams
+  - pymdownx.tabbed:
+      alternate_style: true 
+  
+  # Matematinės formulės (jei reikės Big-O notacijai)
+  - pymdownx.arithmatex:
+      generic: true
+
+# Jūsų meniu struktūra
 nav:
   - 'Pradžia': index.md
   - 'Paskaitos':
