@@ -14,4 +14,5 @@ nav:
   - 'Pradžia': index.md
   - 'Paskaitos':
       - 'Nuo C link C++ (Stack)': stack-evoliucija.md
-      - 'Objektų masyvai': stack-evoliucija.md  # Jei turite tokį failą
+      - 'Objektų masyvai': array-evoliucija.md
+      - 'Parametrų perdavimas': ParamPass.md
