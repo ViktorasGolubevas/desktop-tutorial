@@ -25,3 +25,12 @@ char pop(void) {
   printf("\nStekas tuscias");
   return '\n';
 }
+
+/* 
+void push(int c) {
+    if (top < STACK_SIZE) stack[top++] = c;
+}
+int pop(void) {
+    return (top > 0) ? stack[--top] : '\n';
+}
+*/

@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "2_stack.h"
 
-extern char stack[STACK_SIZE];
-extern int  top;
+extern char stack[];
+extern int top;
 
 int main(void) {
   int c;
