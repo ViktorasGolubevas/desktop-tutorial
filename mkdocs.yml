@@ -66,3 +66,4 @@ nav:
     - 'Konceptualūs barjerai': evoliucija-problemos.md
     - 'Objektų masyvai': array-evoliucija.md
     - 'Parametrų perdavimas': ParamPass.md
+  - 'Dizainas': design.md
