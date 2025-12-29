@@ -61,7 +61,8 @@ markdown_extensions:
 # Jūsų meniu struktūra
 nav:
   - 'Pradžia': index.md
-  - 'Paskaitos':
-      - 'Nuo C link C++ (Stack)': stack-evoliucija.md
-      - 'Objektų masyvai': array-evoliucija.md
-      - 'Parametrų perdavimas': ParamPass.md
+  - 'Temos':
+    - 'Nuo C link C++ (Stack)': stack-evoliucija.md
+    - 'Konceptualūs barjerai': evoliucija-problemos.md
+    - 'Objektų masyvai': array-evoliucija.md
+    - 'Parametrų perdavimas': ParamPass.md
