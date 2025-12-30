@@ -23,3 +23,35 @@ int main(void) {
       |         pop
 
 */
+
+/*
+[{
+	"resource": "/c:/Repos/Github/ViktorasGolubevas/desktop-tutorial/src/evolution/stack/2_driver.c",
+	"owner": "C/C++: IntelliSense",
+	"code": "20",
+	"severity": 8,
+	"message": "identifier \"stack\" is undefined",
+	"source": "C/C++",
+	"startLineNumber": 8,
+	"startColumn": 3,
+	"endLineNumber": 8,
+	"endColumn": 8,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Repos/Github/ViktorasGolubevas/desktop-tutorial/src/evolution/stack/2_driver.c",
+	"owner": "C/C++: IntelliSense",
+	"code": "20",
+	"severity": 8,
+	"message": "identifier \"top\" is undefined",
+	"source": "C/C++",
+	"startLineNumber": 8,
+	"startColumn": 9,
+	"endLineNumber": 8,
+	"endColumn": 12,
+	"origin": "extHost1"
+}]
+*/
+/* 
+identifier "stack" is undefined
+identifier "top" is undefined
+*/
