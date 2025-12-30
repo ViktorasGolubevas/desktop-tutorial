@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "2_stack.h" // no attack
+#include "2x_stack.h" // no attack
 
 int main(void) {
   int c;

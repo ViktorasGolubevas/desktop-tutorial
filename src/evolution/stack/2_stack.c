@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "2_stack.h"
+#include "2x_stack.h"
 
 char stack[STACK_SIZE];
 int  top = 0;

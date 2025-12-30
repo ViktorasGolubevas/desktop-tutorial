@@ -19,3 +19,9 @@ int main(void) {
     printf("Attempted to modify protected stack\n");
     return 0;
 }
+
+/*
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\vikto\AppData\Local\Temp\ccYvBz4R.o:3_attack.c:(.rdata$.refptr.top[.refptr.top]+0x0): undefined reference to `top'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\vikto\AppData\Local\Temp\ccYvBz4R.o:3_attack.c:(.rdata$.refptr.stack[.refptr.stack]+0x0): undefined reference to `stack'
+collect2.exe: error: ld returned 1 exit status
+*/
