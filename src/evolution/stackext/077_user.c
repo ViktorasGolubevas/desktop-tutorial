@@ -15,7 +15,7 @@ int main(void) {
     putchar('\n');
     printf("st1 pabaiga\n");
 
-    destroy(pst);
+    destroy(pst1);
 
     return 0;
 }
