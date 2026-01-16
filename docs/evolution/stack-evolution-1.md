@@ -44,24 +44,24 @@ file: "Progresuojame nuo C iki Modern C++, Steko pavyzdys 1-7, Copilot"
 
 Šis konspektas atskleidžia pirmuosius C "epochos" **7 evoliucijos etapus**, kurie parodo, kaip paprastas stekas transformuojasi į pilnai inkapsuliuotą ADT:
 
-01 etapas: Monolitinė Programa
-02 etapas: Failų Dekompozicija
-03 etapas: Modulių Sistema
-04 etapas: Informacijos Slėpimas
-05 etapas: Vartotojo Apibrėžiamas Tipas
-06 etapas: Tipas Modulyje
-07 etapas: Pilna Inkapsuliacija
+- 01 etapas: **Monolitinė Programa**
+- 02 etapas: **Failų Dekompozicija**
+- 03 etapas: **Modulių Sistema**
+- 04 etapas: **Informacijos Slėpimas**
+- 05 etapas: **Vartotojo Apibrėžiamas Tipas**
+- 06 etapas: **Tipas Modulyje**
+- 07 etapas: **Pilna Inkapsuliacija**
 
 ---
 
-### 1 Etapas: Monolitinė Programa
+## 1 Etapas: Monolitinė Programa
 
-#### Charakteristikos
-- **Viskas vienoje vietoje** - duomenys, funkcijos ir main() funkcija
+### Charakteristikos
+- _Viskas vienoje vietoje_ - duomenys, funkcijos ir main() funkcija
 - **Globalūs kintamieji** - `stack[]` ir `top`
 - **Tiesioginis prieigos** - jokių abstrakcijų
 
-#### Kodas: `01_n_usestack.c`
+### Kodas: `01_n_usestack.c`
 
 ```c
 #include <stdio.h>
