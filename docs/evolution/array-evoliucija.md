@@ -1834,7 +1834,7 @@ Naujas manager2 dydis: 3
    - STL algoritmai
 
 2. **std::vector<std::unique_ptr<Student>>** - polimorfizmui
-- Skirtingų tipų objektai
+   - Skirtingų tipų objektai
    - Virtualūs metodai
    - Modern C++ stilius
 

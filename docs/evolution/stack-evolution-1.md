@@ -29,32 +29,39 @@ file: "Progresuojame nuo C iki Modern C++, Steko pavyzdys 1-7, Copilot"
 
 **Abstract Data Type** - tai duomenų tipas, apibrėžiamas per jo elgesį (operacijas), o ne per vidinę struktūrą. ADT slepia implementacijos detales ir atskleidžia tik sąsają (interface).
 
-### Evoliucijos Kelias
-
-Šis konspektas atskleidžia **7 evoliucijos etapus**, kurie parodo, kaip paprastas stekas transformuojasi į pilnai inkapsuliuotą ADT:
-
-```
-Monolitinė programa → Failų dekompozicija → Modulių sistema → 
-Informacijos slėpimas → Vartotojo tipas → Tipas modulyje → Pilna inkapsuliacija
-```
-
 ### Kodėl Svarbu Suprasti Evoliuciją?
 
-1. **Istorinis kontekstas** - kaip vystėsi programavimo paradigmos
-2. **Tipinės klaidos** - kokių klaidų išvengti
-3. **Dizaino principai** - kodėl tam tikri sprendimai yra geresni
-4. **Praktiniai įgūdžiai** - kaip teisingai struktūrizuoti kodą
+- **Istorinis kontekstas** - kaip vystėsi programavimo paradigmos
+- **Tipinės klaidos** - kokių klaidų išvengti
+- **Dizaino principai** - kodėl tam tikri sprendimai yra geresni
+- **Praktiniai įgūdžiai** - kaip teisingai struktūrizuoti kodą
+
+### Evoliucijos Kelias
+
+*apie dvi dalis*
+
+## I dalis: Nuo naivaus C iki brandaus C
+
+Šis konspektas atskleidžia pirmuosius C "epochos" **7 evoliucijos etapus**, kurie parodo, kaip paprastas stekas transformuojasi į pilnai inkapsuliuotą ADT:
+
+01 etapas: Monolitinė Programa
+02 etapas: Failų Dekompozicija
+03 etapas: Modulių Sistema
+04 etapas: Informacijos Slėpimas
+05 etapas: Vartotojo Apibrėžiamas Tipas
+06 etapas: Tipas Modulyje
+07 etapas: Pilna Inkapsuliacija
 
 ---
 
-## 1 Etapas: Monolitinė Programa
+### 1 Etapas: Monolitinė Programa
 
-### Charakteristikos
+#### Charakteristikos
 - **Viskas vienoje vietoje** - duomenys, funkcijos ir main() funkcija
 - **Globalūs kintamieji** - `stack[]` ir `top`
 - **Tiesioginis prieigos** - jokių abstrakcijų
 
-### Kodas: `01_n_usestack.c`
+#### Kodas: `01_n_usestack.c`
 
 ```c
 #include <stdio.h>
