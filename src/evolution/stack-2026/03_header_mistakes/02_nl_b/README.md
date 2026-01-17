@@ -1,0 +1,148 @@
+# 03 etapas – Antraštiniai failai ir modulio klaidos
+
+Šiame etape nagrinėjamas **vienas svarbiausių C kalbos lūžių**:
+
+> **Failas ≠ modulis**  
+> **Deklaracija ≠ apibrėžimas**
+
+Tai etapas, kuriame studentai dažniausiai susiduria su *linkerio klaidomis* ir pradeda jausti, kad C programą sudaro **ne vien tik `.c` failai**, o *atskirai kompiliuojami vienetai*.
+
+---
+
+## Etapo tikslas
+
+- Suprasti skirtumą tarp:
+  - deklaracijos (declaration)
+  - apibrėžimo (definition)
+- Suprasti, **kodėl globalūs kintamieji antraštiniuose failuose yra pavojingi**
+- Pamatyti tipines klaidas, kurios:
+  - sukompiliuoja
+  - bet **nesilink’ina**
+
+---
+
+## Katalogo struktūra
+
+```text
+03_headers/
+├─ n_nc/        # naivus, nesikompiliuoja
+├─ w_nl/        # klaidingas, nesilink’ina (multiple definition)
+├─ w_nl2/       # klaidingas, nesilink’ina (undefined reference)
+├─ ok/          # teisingas sprendimas
+└─ README.md
+```
+
+---
+
+## Variantai
+
+### 🟥 `n_nc` – naivus bandymas
+
+**Idėja:**
+> „Jei `stack` reikalingas visur – įrašykime jį į `.h` failą.“
+
+**Kas daroma:**
+- antraštiniame faile apibrėžiamas globalus masyvas ir kintamasis
+
+**Rezultatas:**
+- ❌ **nesikompiliuoja** arba kompiliuojasi priklausomai nuo konteksto
+
+**Problema:**
+- `.h` failas nėra realizacijos vieta
+
+---
+
+### 🟥 `w_nl` – multiple definition
+
+**Idėja:**
+> „Jei veikia viename faile – veiks ir keliuose.“
+
+**Kas daroma:**
+- globalūs kintamieji apibrėžti `.h`
+- `.h` įtrauktas į kelis `.c` failus
+
+**Rezultatas:**
+- ❌ **nesilink’ina** (`multiple definition of 'stack'`)
+
+**Esminė pamoka:**
+- apibrėžimas turi būti **vienas**
+
+---
+
+### 🟥 `w_nl2` – undefined reference
+
+**Idėja:**
+> „Naudokime `extern`, tada viskas susitvarkys.“
+
+**Kas daroma:**
+- `.h` faile – `extern` deklaracijos
+- **nėra** atitinkamo apibrėžimo jokioje `.c` faile
+
+**Rezultatas:**
+- ❌ **nesilink’ina** (`undefined reference`)
+
+**Esminė pamoka:**
+- `extern` **nekuria objekto**
+
+---
+
+### 🟩 `ok` – teisingas sprendimas
+
+**Idėja:**
+> „Antraštė aprašo, `.c` – realizuoja.“
+
+**Kas daroma teisingai:**
+- `.h` faile:
+  - funkcijų deklaracijos
+  - `extern` globalūs objektai
+- `.c` faile:
+  - vieninteliai globalių objektų apibrėžimai
+
+**Rezultatas:**
+- ✅ sukompiliuoja
+- ✅ susilink’ina
+- ⚠️ realizacija **dar atvira** naudotojui
+
+---
+
+## Kompiliavimas (teisingas variantas)
+
+```sh
+gcc stack.c user.c -o use_stack
+```
+
+---
+
+## Ką išmokstame šiame etape
+
+- C programa sudaryta iš **atskirai kompiliuojamų vienetų**
+- `.h` failai skirti **aprašams**, ne apibrėžimams
+- Linkerio klaidos yra:
+  - ne sintaksės
+  - o **programos struktūros** klaidos
+
+---
+
+## Ryšys su kitais etapais
+
+- Ankstesnis: 02 – Failas ≠ modulis
+- Kitas: 04 – Modulis su paslėpta realizacija (`static`)
+
+---
+
+## Analogija su C++
+
+Šis etapas paaiškina, kodėl C++ turi:
+
+```cpp
+class Stack;      // deklaracija
+class Stack { };  // apibrėžimas
+```
+
+ir kodėl `#include` nėra "teksto kopijavimas" konceptualiai.
+
+---
+
+> **Svarbiausia mintis:**  
+> *Jei nesupranti, kur ir kiek kartų objektas apibrėžtas – programa jau pažeista.*
+
