@@ -6,7 +6,7 @@
 
 > **Deklaracija ≠ apibrėžimas**
 
-Tai etapas, kuriame studentai dažniausiai susiduria su *linkerio klaidomis* ir pradeda jausti, kad C programą sudaro **ne vien tik `.c` failai**, o *atskirai kompiliuojami vienetai*.
+Tai etapas, kuriame studentai dažniausiai susiduria su _linkerio klaidomis_ ir pradeda jausti, kad C programą sudaro *ne tiesiog "kažkokie" `.c` failai*, o **atskirai kompiliuojami vienetai** (_**separate compilation units**_).
 
 ---
 
