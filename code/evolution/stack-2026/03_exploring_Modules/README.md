@@ -30,6 +30,7 @@ Tai etapas, kuriame studentai dažniausiai susiduria su _linkerio klaidomis_ ir 
 ```
 
 ---
+---
 
 ## Bandymai
 
@@ -38,7 +39,7 @@ Tai etapas, kuriame studentai dažniausiai susiduria su _linkerio klaidomis_ ir 
 **Idėja:**
 > „Jei `stack` reikalingas visur – įrašykime jį į `.h` failą.“
 
-**Kas daroma:**
+**Sprendimas:**
 - antraštiniame faile apibrėžiamas globalus masyvas ir kintamasis
 
 **Rezultatas:**
@@ -54,7 +55,7 @@ Tai etapas, kuriame studentai dažniausiai susiduria su _linkerio klaidomis_ ir 
 **Idėja:**
 > „Jei veikia viename faile – veiks ir keliuose.“
 
-**Kas daroma:**
+**Sprendimas:**
 - globalūs kintamieji apibrėžti `.h`
 - `.h` įtrauktas į kelis `.c` failus
 
@@ -71,7 +72,7 @@ Tai etapas, kuriame studentai dažniausiai susiduria su _linkerio klaidomis_ ir 
 **Idėja:**
 > „Naudokime `extern`, tada viskas susitvarkys.“
 
-**Kas daroma:**
+**Sprendimas:**
 - `.h` faile – `extern` deklaracijos
 - **nėra** atitinkamo apibrėžimo jokioje `.c` faile
 
@@ -86,9 +87,9 @@ Tai etapas, kuriame studentai dažniausiai susiduria su _linkerio klaidomis_ ir 
 ### 🟩 `ok` – teisingas sprendimas
 
 **Idėja:**
-> „Antraštė aprašo, `.c` – realizuoja.“
+> „Antraštė `.h` aprašo, `.c` – realizuoja.“
 
-**Kas daroma teisingai:**
+**Sprendimas:**
 - `.h` faile:
   - funkcijų deklaracijos
   - `extern` globalūs objektai
@@ -102,7 +103,7 @@ Tai etapas, kuriame studentai dažniausiai susiduria su _linkerio klaidomis_ ir 
 
 ---
 
-## Kompiliavimas (teisingas variantas)
+## Kompiliavimas
 
 ```sh
 gcc stack.c user.c -o use_stack
