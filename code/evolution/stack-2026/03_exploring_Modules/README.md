@@ -2,7 +2,8 @@
 
 Šiame etape nagrinėjamas **vienas svarbiausių C kalbos lūžių**:
 
-> **Failas ≠ modulis**  
+> **Failas ≠ modulis**
+
 > **Deklaracija ≠ apibrėžimas**
 
 Tai etapas, kuriame studentai dažniausiai susiduria su *linkerio klaidomis* ir pradeda jausti, kad C programą sudaro **ne vien tik `.c` failai**, o *atskirai kompiliuojami vienetai*.
@@ -11,7 +12,7 @@ Tai etapas, kuriame studentai dažniausiai susiduria su *linkerio klaidomis* ir 
 
 ## Etapo tikslas
 
-- Suprasti skirtumą tarp **aprašo** (_*declaration*_) ir **apibrėžimo** (_*definition*_)
+- Suprasti skirtumą tarp **aprašo** (_**declaration**_) ir **apibrėžimo** (_**definition**_)
 - Suprasti, **kodėl globalūs kintamieji antraštiniuose failuose yra pavojingi**
 - Pamatyti tipines klaidas, kurios:
   - sukompiliuoja
