@@ -13,10 +13,8 @@ Tai etapas, kuriame studentai dažniausiai susiduria su _linkerio klaidomis_ ir 
 ## Etapo tikslas
 
 - Suprasti skirtumą tarp **aprašo** (_**declaration**_) ir **apibrėžimo** (_**definition**_)
-- Suprasti, **kodėl globalūs kintamieji antraštiniuose failuose yra pavojingi**
-- Pamatyti tipines klaidas, kurios:
-  - sukompiliuoja
-  - bet **nesilink’ina**
+- Suprasti, kodėl *globalūs kintamieji* antraštiniuose failuose yra pavojingi
+- Pamatyti tipines klaidas, dėl kurių *sukompiliuoja*, bet *nesilink’ina*
 
 ---
 
