@@ -8,15 +8,11 @@
 
 Tai etapas, kuriame studentai dažniausiai susiduria su _linkerio klaidomis_ ir pradeda jausti, kad C programą sudaro *ne tiesiog "kažkokie" `.c` failai*, o **atskirai kompiliuojami vienetai** (_**separate compilation units**_).
 
----
-
 ## Etapo tikslas
 
 - Suprasti skirtumą tarp **aprašo** (_**declaration**_) ir **apibrėžimo** (_**definition**_)
 - Suprasti, kodėl *globalūs kintamieji* antraštiniuose failuose yra pavojingi
 - Pamatyti tipines klaidas, dėl kurių *sukompiliuoja*, bet *nesilink’ina*
-
----
 
 ## Katalogo struktūra
 
@@ -29,7 +25,6 @@ Tai etapas, kuriame studentai dažniausiai susiduria su _linkerio klaidomis_ ir 
 └─ README.md
 ```
 
----
 ---
 
 ## Bandymai
